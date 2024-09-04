@@ -1,0 +1,363 @@
+@font-face {font-family: 'coiny';
+src: url('fonts/Coiny/Coiny-Regular.ttf') format('ttf');}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('fonts/Roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'lejour';
+    src: url('fonts/le_jour_serif/Le\ Jour\ Serif.ttf');
+}
+
+@font-face {
+    font-family: 'agrandiregular';
+src: url('fonts/agrandir/Agrandir-Regular.otf');
+}
+
+@font-face {
+    font-family: 'opti';
+    src: url('fonts/OPTIZoomScript.otf');
+}
+
+body{background-color:#fff8f3;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav{text-align: center;
+    box-sizing: border-box;
+     /* Agrega un borde sólido de 1px en la parte inferior */
+    padding-bottom: 2%;
+}
+
+img{width: 30%;
+height: auto;
+display: block; /* Para que 'margin: auto;' funcione correctamente */
+margin: auto; /* Centra horizontalmente la imagen */}
+
+nav a{color: black;
+text-decoration: none;
+font-family: 'robotomedium';
+text-transform: uppercase;
+font-size: 12px;
+margin-right: 14px;
+letter-spacing: 2px;
+} 
+
+nav a:hover {color: grey;
+letter-spacing: 2px;} /* Color del texto al pasar el mouse */
+
+nav a:active{color: black;} /* cuando le hacemos clic al vínculo. */
+
+.titulo1 {
+    background-color: #000000;
+}
+
+.titulo1 h1 {font-family: 'agrandiregular';
+    text-transform:uppercase;
+    text-align: center;
+    font-size: 16px;
+    width: 55%;
+    padding: 70px;
+    color: #fff2e8;
+    margin: auto; /* Centra horizontalmente el elemento */
+}
+
+.titulo2 {font-family: 'coiny';}
+
+.contenedor {
+    overflow: hidden; /* Esto asegura que el contenedor se expanda para contener tanto la imagen como el párrafo */
+}
+
+.contenedor h2 {
+    font-family: 'agrandiregular';
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.contenedor p{
+    font-family: 'agrandiregular';
+}
+
+.especifica1 {
+    padding: 20px;
+    width: 50%;
+    float: left; /* Hace que la imagen flote a la izquierda */
+    margin-right: 10px; /* Añade un espacio entre la imagen y el párrafo */
+}
+
+.quote {
+    width:100%;
+    margin-top: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #fff2e8;
+    left: 0;
+    width: 100%;
+    
+    color: rgb(0, 0, 0);
+    text-align: center; /* Centra el contenido del footer */
+}
+
+.footer-container {
+    display: inline-block; /* Para que el contenedor se ajuste al ancho del contenido */
+    padding: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-button img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.pie{
+    font-family: 'agrandiregular';
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 13px;
+    padding-bottom: 14%;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* sección sobre mi */
+
+.sobre-mi{
+    overflow: hidden; /* Limpiar floats */
+    background-color: #fff2e8;
+    
+}
+
+.imagen-cuadrada{
+    float: left;
+    width: 20%;
+    margin-right: 30px; /* Espacio entre la imagen y el texto */
+    padding: 60px;
+    padding-left: 10%;
+    
+
+}
+
+.texto h2{
+    padding: 60px;
+    font-family: 'agrandiregular';
+    color: #000000;
+    padding-bottom: 20px;
+
+    
+}
+
+.texto p{
+    font-family: 'agrandiregular';
+    color: #000000;
+    margin-right: 130px;
+    padding-bottom: 17px;
+}
+
+.boton{
+    padding: .4rem 1rem;
+    padding-top: 0,9rem;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #fff2e8;
+  font-size: 13px;
+  font-family: 'agrandiregular';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.boton:hover{
+    background-color: grey;
+}
+
+.gallery2 {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 13px;
+    padding-bottom: 14%;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.gallery2 img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.figure1{
+    color: rgb(0, 0, 0); /* Color del texto */
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    font-size: 14px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    text-transform: uppercase;
+    font-family: 'robotobold';
+    letter-spacing: 1px;
+}
+
+#logo {
+    max-width: 120px; /* Ajusta el tamaño máximo del logo */
+    width: auto;
+   margin-left: 20px;
+  }
+  
+  .navbar-brand {
+    flex-grow: 1; /* Permite que el logo use solo el espacio necesario */
+  }
+  
+  .navbar-nav {
+    flex-grow: 1; /* Permite que el menú use solo el espacio necesario */
+    justify-content: flex-end; /* Alinea el menú a la derecha */
+  }
+  
+  @media (max-width: 992px) {
+    #logo {
+      max-height: 70px; /* Ajusta el tamaño del logo para pantallas medianas */
+    }
+  }
+
+  .hero-image {
+    background-image: url('imgs/sand.png');
+    background-size:cover;
+    background-position: center;
+    height: 80vh; /* Puedes ajustar la altura según tus necesidades */
+    position: relative;
+    color: white;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'agrandiregular';
+    color: #000000;
+    text-align:left;
+    
+}
+ 
+.fuentepersonalizada{
+    font-family: 'opti';
+    font-size: 75px;
+    color: #000000;
+}
+
+.about-me {
+    padding: 50px 0;
+    background-color: #fff8f3;
+    color: #000000;
+}
+.profile-pic {
+    width: 80%;
+    border-radius: 8%;
+}
+
+.frase{
+    color: #004937;
+    font-size: 48px;
+}
+
+.nav-link{
+    color: #004937;
+}
+
+.btn-personalizado{
+    background-color: #F1833C;
+    color: #000000;
+    font-family: 'robotobold';
+}
+
+.btn-personalizado:hover{
+    background-color: #c85d16;
+    color: #000000;
+    font-family: 'robotobold';
+}
+
+
+.nosotros{
+    font-family:'robotobold';
+    font-size: 15px;
+    color: antiquewhite;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #F1843D;
+  }
+  
+  .team-member {
+    flex-basis: 30%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .team-member h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
